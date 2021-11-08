@@ -1,0 +1,42 @@
+
+
+Hilt Use:
+
+      step1  --->   build.gradle
+
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.28-alpha'
+
+
+
+      step2  ---> build.gradle(app)
+
+
+        apply plugin: 'kotlin-kapt'
+        apply plugin: 'dagger.hilt.android.plugin'
+
+        implementation "com.google.dagger:hilt-android:2.28-alpha"
+        kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
+
+
+
+
+
+      step 3
+      @HiltAndroidApp   --->(MyApplication)
+
+
+
+      step:4 (需要注入的对象)
+      data  class Person constructor(val name:String,val age:Int) {
+           @Inject
+           constructor():this("terry",18)
+      }
+
+
+      step:5  (需要注入的地方)
+      @AndroidEntryPoint ---> HiltActivity
+
+
+      step:6  （注入）
+      @Inject
+      lateinit var p:Person
