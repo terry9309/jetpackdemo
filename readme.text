@@ -40,3 +40,37 @@ Hilt Use:
       step:6  （注入）
       @Inject
       lateinit var p:Person
+
+
+
+
+
+
+
+
+
+     ===============================>>>>>>>>>>>>>>>>
+
+
+     LiveData:
+
+          Use1:  LiveData 的简单使用
+
+          Use2:  LiveData 模仿微信的消息推送机制，当activity 不可见时不更新消息列表，只接受推送消息
+                 从而证明LiveData 对界面生命周期的感应能力
+
+
+          Use3:  LiveData 在LiveDataUse3Activity 中对msg 的值进行了修改，再跳转到LiveDataNextActivity 中去注册监听
+
+                 却发现接收到了之前在LiveDataUse3Activity 中修改的值，这就是"数据倒灌"的现象
+
+
+
+
+
+
+
+
+
+
+

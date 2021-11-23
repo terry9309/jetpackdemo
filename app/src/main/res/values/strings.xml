@@ -3,4 +3,12 @@
 
 
     <string name="tv_Hilt">Hilt</string>
+
+    <string name="tv_LiveData">LiveData</string>
+
+
+    <string name="tv_DataBinding">DataBinding</string>
+
+
+    <string name="tv_ViewModel">ViewModel</string>
 </resources>

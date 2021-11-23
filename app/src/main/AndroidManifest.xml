@@ -3,14 +3,20 @@
     package="com.example.jetpackdemo">
 
     <application
-        android:allowBackup="true"
         android:name=".MyApp"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".hilt.HiltActivity"/>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".viewmodel.ViewModelActivity"></activity>
+        <activity android:name=".dataBinding.DataBindUseActivity" />
+        <activity android:name=".livedata.use3.LiveDataNextActivity" />
+        <activity android:name=".livedata.use3.LiveDataUse3Activity" />
+        <activity android:name=".livedata.use2.LiveDataUse2Activity" />
+        <activity android:name=".livedata.use1.LiveDataActivity" />
+        <activity android:name=".hilt.HiltActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".livedata.use2.MyService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

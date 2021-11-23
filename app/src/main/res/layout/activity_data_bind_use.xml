@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--  定义View 的数据来源-->
+    <data>
+
+        <variable
+            name="student"
+            type="com.example.jetpackdemo.dataBinding.Student"/>
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".dataBinding.DataBindUseActivity">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="26sp"
+            android:text="@{student.nameF}"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="26sp"
+            android:text="@{student.ageF.toString()}"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
