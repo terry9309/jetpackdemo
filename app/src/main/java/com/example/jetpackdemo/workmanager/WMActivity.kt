@@ -98,6 +98,7 @@ class WMActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.my_worker4 -> {
 
+
                 //这里虽然设置为10s 执行一次 ，但是Google  为了兼顾耗电，默认循环的最小间隔为15分钟，
                 val periodicWorkRequest =
                     PeriodicWorkRequest.Builder(MyWork3::class.java, 10, TimeUnit.SECONDS).build()
