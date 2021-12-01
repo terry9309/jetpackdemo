@@ -52,4 +52,17 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DataBindingUse"/>
 
+
+
+    <TextView
+        android:id="@+id/WorkManagerUse"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tv_WorkManager"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewModelUse"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

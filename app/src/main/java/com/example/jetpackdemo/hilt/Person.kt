@@ -8,4 +8,6 @@ data  class Person constructor(val name:String,val age:Int) {
 
      @Inject
      constructor():this("terry",18)
+
+
 }

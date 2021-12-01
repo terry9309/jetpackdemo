@@ -11,4 +11,10 @@
 
 
     <string name="tv_ViewModel">ViewModel</string>
+    
+    
+    
+    <string name="tv_WorkManager">WorkManager</string>
+    
+    
 </resources>

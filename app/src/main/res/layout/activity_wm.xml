@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".workmanager.WMActivity">
+
+    <TextView
+        android:id="@+id/my_worker1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MyWork1（单次任务）" />
+
+    <TextView
+        android:id="@+id/my_worker2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MyWork2（数据回传）" />
+
+    <TextView
+        android:id="@+id/my_worker3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MyWork3（多个任务）" />
+
+
+    <TextView
+        android:id="@+id/my_worker4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MyWork4（循环任务）" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

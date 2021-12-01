@@ -10,10 +10,11 @@ import com.example.jetpackdemo.livedata.use1.LiveDataActivity
 import com.example.jetpackdemo.livedata.use2.LiveDataUse2Activity
 import com.example.jetpackdemo.livedata.use3.LiveDataUse3Activity
 import com.example.jetpackdemo.viewmodel.ViewModelActivity
+import com.example.jetpackdemo.workmanager.WMActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity(),View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,31 +22,49 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         LiveDataUse.setOnClickListener(this)
         DataBindingUse.setOnClickListener(this)
         ViewModelUse.setOnClickListener(this)
+        WorkManagerUse.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
 
 
-        when(v.id){
+        when (v.id) {
             R.id.HiltUse -> {
-                startActivity(Intent(this,HiltActivity::class.java))
+                startActivity(Intent(this, HiltActivity::class.java))
             }
 
-            R.id.LiveDataUse ->{
-                startActivity(Intent(this,
-                    LiveDataUse3Activity::class.java))
-            }
-
-            R.id.DataBindingUse ->{
-                startActivity(Intent(this,
-                    DataBindUseActivity::class.java))
-            }
-
-            R.id.ViewModelUse ->{
+            R.id.LiveDataUse -> {
                 startActivity(
                     Intent(
-                    this,ViewModelActivity::class.java
+                        this,
+                        LiveDataUse3Activity::class.java
+                    )
                 )
+            }
+
+            R.id.DataBindingUse -> {
+                startActivity(
+                    Intent(
+                        this,
+                        DataBindUseActivity::class.java
+                    )
+                )
+            }
+
+            R.id.ViewModelUse -> {
+                startActivity(
+                    Intent(
+                        this, ViewModelActivity::class.java
+                    )
+                )
+            }
+
+            R.id.WorkManagerUse -> {
+                startActivity(
+                    Intent(
+                        this, WMActivity::class.java
+
+                    )
                 )
             }
         }

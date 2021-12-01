@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".viewmodel.ViewModelActivity"></activity>
+        <activity
+            android:name=".workmanager.WMActivity"
+            android:exported="false" />
+        <activity android:name=".viewmodel.ViewModelActivity" />
         <activity android:name=".dataBinding.DataBindUseActivity" />
         <activity android:name=".livedata.use3.LiveDataNextActivity" />
         <activity android:name=".livedata.use3.LiveDataUse3Activity" />
